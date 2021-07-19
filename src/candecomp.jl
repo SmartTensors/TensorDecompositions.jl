@@ -121,7 +121,7 @@ function _candecomp(
             mul!(gram[i], factors[i]', factors[i])
         end
         resid_old = resid
-        resid = norm(view(V, 1:nVi, :) * permitedims((factors[N] .* lbds)) .- tnsr_flat)
+        resid = norm(view(V, 1:nVi, :) * permutedims((factors[N] .* lbds)) .- tnsr_flat)
         converged = abs(resid - resid_old) < tol * resid_old
         niters += 1
     end
