@@ -1,6 +1,6 @@
 name = "TensorDecompositions"
 uuid = "04ed911b-6d5f-4088-a74e-60d2d5028204"
-version = "1.2.3"
+version = "1.2.4"
 
 [deps]
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
